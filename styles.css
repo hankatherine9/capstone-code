@@ -1,0 +1,247 @@
+html {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+body {
+    overflow-y: hidden;
+    background-color: #23232B;
+    margin: 0;
+    padding: 0;
+}
+
+html::-webkit-scrollbar,
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.nav {
+    margin: 0;
+    padding: 1.5vh 0 1.5vh .4vh;
+    width: 6.75vh;
+    height: 97vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    top: 0;
+    border-right: 2px solid #848484;
+    background: #23232B;
+    z-index: 2;
+}
+
+.nav div {
+    margin: 0;
+    padding: 0;
+    height: 16vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    width: 3vh;
+}
+
+.content {
+    white-space: normal;
+    width: 5000vh;
+    height: 100vh;
+    margin-left: 6.75vh;
+    z-index: 1;
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+}
+
+h1 {
+    margin: 0;
+    margin-right: 2.5vh;
+    padding: 0;
+    height: 3vh;
+    font-size: 1.9vh;
+    rotate: 270deg;
+    color: white;
+    font-family: essonnes-display, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .25vh;
+}
+
+.pixel-wordmark {
+    font-size: 3vh;
+    font-family: pf-pixelscript, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.background-bar {
+    width: 100vw;
+    height: 16.46vh;
+    border-top: 1px solid #848484;
+    border-bottom: 1px solid #848484;
+}
+
+.background-bar:first-of-type {
+    border-top: none;
+}
+
+.background-bar:last-of-type {
+    border-bottom: none;
+}
+
+.intro {
+    /* flex: 0 0 auto; */
+    height: 100vh;
+    width: 190vh;
+}
+
+h2 {
+    margin: 0 4vh;
+    padding: 0;
+    font-size: 7vh;
+    letter-spacing: .25vh;
+    font-family: essonnes-display, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+    background: url(images/title-mask.png);
+    background-clip: text;
+    color: transparent;
+}
+
+.pixel-title {
+    font-size: 10vh;
+    font-family: pf-pixelscript, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-size: 2vh;
+    color: white;
+    font-family: "quasimoda", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+}
+
+.intro-text {
+    font-size: 3.75vh;
+}
+
+.term {
+    font-family: "schoolbook", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.explain {
+    font-size: 1.75vh;
+    width: 50vh;
+    padding: 2vh;
+    font-family: video, serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #C4C4C4;
+    border: 2px solid #848484;
+    background: #23232B;
+}
+
+.column {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#home-intro {
+    margin: 1.5vh 0 0 5vh;
+}
+
+#homescreen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5.2vh;
+    padding-right: 8vh;
+}
+
+#home-rectangles {
+    display: flex;
+    flex-direction: column;
+}
+
+#home-rectangles div {
+    width: 20vh;
+    height: 16.7vh;
+    background-color: white;
+    mix-blend-mode: screen;
+}
+
+#home-rectangles div:nth-child(1) {
+    background-color: #FF5787;
+}
+
+#home-rectangles div:nth-child(2) {
+    background-color: #FFBC80;
+}
+
+#home-rectangles div:nth-child(3) {
+    background-color: #C5FF61;
+}
+
+#home-rectangles div:nth-child(4) {
+    background-color: #8B8BFF;
+}
+
+#intro-arrow {
+    margin-bottom: 16vh;
+}
+
+#timeline-intro {
+    width: 150vh;
+    margin: -1vh 0 0 4vh;
+}
+
+#home-rectangles div:not(:first-child) {
+    margin-top: -41.75%;
+}
+
+
+
+/* Display Grid Example (Middle Ages) */
+
+/* #middle-ages {
+    display: grid;
+    grid-template-rows: 16% 16% 33% 33%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#middle-ages-title {
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+#middle-ages-desc {
+    grid-row: 2;
+    grid-column: 1/2;
+} */
